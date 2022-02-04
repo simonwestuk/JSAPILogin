@@ -17,34 +17,46 @@
   </head>
   <body>
     <h1>Example API Register</h1>
-<form id="frmLogin">
-    <div class="mb-3 row">
-      <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-      <div class="col-sm-10">
-        <input
-          type="text"
-          class="form-control"
-          id="email"
-          name="email"
-          placeholder="email@example.com"
-        />
+    <form id="frmLogin" method="post">
+      <div class="mb-3 row">
+        <label for="firstName" class="col-sm-2 col-form-label">Firstname</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="firstName" name="firstName" />
+        </div>
       </div>
-    </div>
-    <div class="mb-3 row">
-      <label for="inputPassword" class="col-sm-2 col-form-label"
-        >Password</label
-      >
-      <div class="col-sm-10">
-        <input
-          type="password"
-          class="form-control"
-          id="inputPassword"
-          name="password"
-        />
+      <div class="mb-3 row">
+        <label for="lastName" class="col-sm-2 col-form-label">Surname</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="lastName" name="lastName" />
+        </div>
       </div>
-    </div>
-    <button type="submit" class="btn btn-primary">Register</button>
-</form>
+      <div class="mb-3 row">
+        <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input
+            type="text"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="email@example.com"
+          />
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label"
+          >Password</label
+        >
+        <div class="col-sm-10">
+          <input
+            type="password"
+            class="form-control"
+            id="inputPassword"
+            name="password"
+          />
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Register</button>
+    </form>
     <!-- Optional JavaScript; choose one of the two! -->
     <script src="api.js"></script>
 
